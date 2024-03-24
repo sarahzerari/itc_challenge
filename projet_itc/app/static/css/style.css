@@ -86,8 +86,10 @@ li {
     margin-left: 2px;
     position: absolute;
 }
+
 .container .innovate-hub {
     position: relative;
+    background-image: url(imgs/photo_2024-03-22_14-00-35.jpg);
     background-size: cover;
     min-height: 100vh;
 }
@@ -197,7 +199,7 @@ li {
     align-items: center;
     text-align: center;
     height: 800PX ;
-    margin-bottom: 25PX;
+    margin-bottom: 50PX;
 }
 .are-you-ready h2 {
     text-align: center;
@@ -409,7 +411,9 @@ h1 {
     margin-bottom: 40PX;
     margin-top: 25PX;
 }
-
+.packs .groupe h2{
+    font-size: 25px;
+}
 .first img {
     float: inline-end;
 }
@@ -564,7 +568,7 @@ h2 {
 }
 
 .groupe>div {
-    width: 30%;
+    width: 25%;
     margin: 20px;
     border-radius: 10px;
     background-color: #fdfdfd;
@@ -630,6 +634,9 @@ button:hover {
     transition: 0.5s;
     width: 95px;
     height: 45px;
+    border: 1px solid;
+    box-shadow: 0 0 10px #164863;
+    text-shadow: 0 0 1px #164863;
 }
 
 .logo img {
@@ -692,6 +699,7 @@ footer{
     display: flex;
     align-items: center; 
     padding: 10px;
+    padding-top: 20px;
 }
 .logo-contact .social {
     display: flex;
@@ -719,7 +727,7 @@ footer{
     margin-left: 99PX;
     border-radius: 15PX;
 }
-@media(max-width: 768px) {
+@media(min-width: 768px) {
     .nav-bar #menu {
         display: none;
     }
@@ -734,27 +742,34 @@ footer{
 
     #menu {
         margin-right: 40px;
+        cursor: pointer;
     }
-
-    #menu:hover+ul {
+    .menu-dropdown {
+        display: none;
+        /* Your other styles */
+    }
+    
+    .menu-dropdown.show {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 76px;
+        top: 60px;
         left: 0px;
         width: 730px;
-        border-top: solid 1px black;
-        background-color: #ffffffc0;
+        background-color: rgba(255, 255, 255, 0.918);
         padding-left: 20px;
         z-index: 1;
-    }
-
-    #menu:hover+ul li {
-        display: flex;
         width: 100%;
         margin-bottom: 10px;
+        align-items: start;
+        padding: 20px;
     }
-
+    .menu-dropdown .arrow ul {
+        padding: 10px;
+        margin-left: 105px;
+        margin-top: 45px;
+        border-radius: 15px 0 0 0;
+    }
     .who-are-we {
         margin-bottom: 90px;
         margin-top: 20px;
@@ -840,7 +855,77 @@ footer{
     .cart .dev img {
         margin-right: 120px;
     }
+
+    
 }
+@media(max-width: 1026px )and (min-width: 767px){
+    .elipse{
+        display: none;
+    }
+    .down{
+       margin-left: 40%; 
+    }
+    .first {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px; 
+    }
+
+    .cart {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        align-items: center;
+    }
+
+    .first {
+        display: flex;
+        align-items: center;
+    }
+    
+    .part2 img {
+        width: 80%;
+        height: 300px;
+        margin-top: 20px;
+        margin-right: 70px;
+        align-items: center;
+    }
+
+    .part2 h3 {
+        color: #114967;
+        text-align: center;
+    }
+
+    .text2 {
+        margin: 0%;
+    }
+
+    .part2 .text2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+
+    .first .rect1,
+    .first .rect2,
+    .first .rect3 {
+        width: 60%;
+    }
+
+    .cart .Marketing,
+    .cart .graphic,
+    .cart .dev {
+        width: 63%;
+    }
+
+    .cart .Marketing img,
+    .cart .graphic img,
+    .cart .dev img {
+        margin-right: 120px;
+    }
+
+}
+
 @media(max-width: 768px) {
     .image img {
         width: 70%;
@@ -868,6 +953,34 @@ footer{
         background-color: #164863;
         height: 710PX ;
     }
+    .packs .groupe > div {
+        width: 150px;
+    }
+    .packs .groupe h2{
+        font-size: 22px;
+    }
+    .packs .groupe p{
+        margin: 0;
+    }
+    .navigation p,.navigation a{
+        font-size: 10px;
+    }
+    .navigation ul li img {
+        width: 30px; 
+        height: 30px; 
+    }
+    .logo-contact img{
+        width: 100px;
+        height: 50px;
+        margin-left: 10px;
+        margin-top: 19px;
+    }
+    .logo-contact .social {
+        display: flex;
+    }
+    .links a,.links p{
+        font-size: 11px;
+    }
 
 }
 @media (max-width: 576px) {
@@ -880,26 +993,34 @@ footer{
     }
 
     #menu {
-        margin-right: 40px; 
+        margin-right: 40px;
+        cursor: pointer;
     }
-
-    #menu:hover+ul {
+    .menu-dropdown {
+        display: none;
+        /* Your other styles */
+    }
+    
+    .menu-dropdown.show {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 76px;
+        top: 60px;
         left: 0px;
-        width: calc(100% - 40px);
-        border-top: solid 1px black;
-        background-color: #ffffffc0;
+        width: 730px;
+        background-color: rgba(255, 255, 255, 0.918);
         padding-left: 20px;
         z-index: 1;
-    }
-
-    #menu:hover+ul li {
-        display: flex;
         width: 100%;
         margin-bottom: 10px;
+        align-items: start;
+        padding: 20px;
+    }
+    .menu-dropdown .arrow ul {
+        padding: 10px;
+        margin-left: 105px;
+        margin-top: 45px;
+        border-radius: 15px 0 0 0;
     }
 
     .who-are-we p {
@@ -1004,5 +1125,47 @@ footer{
         background-color: #164863;
         height: 710px; 
     }
+
+    .packs .groupe > div {
+        width: 100px;
+    }
+    .packs .groupe h2{
+        font-size: 16px;
+    }
+    .packs .groupe h3{
+        font-size: 16px;
+    }
+    .packs .groupe p{
+        margin: 0;
+        
+    }
+    .navigation p,.navigation a{
+        font-size: 10px;
+    }
+    .navigation ul li img {
+        width: 30px; 
+        height: 30px; 
+    }
+    .logo-contact img{
+        width: 90px;
+        height: 45px;
+        margin-left: 10px;
+        margin-top: 19px;
+    }
+    .logo-contact .social {
+        display: flex;
+    }
+    .links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        padding: 20px;
+        font-size: 12px;
+        padding: 10px;
+    }
 }
 
+.image img:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}

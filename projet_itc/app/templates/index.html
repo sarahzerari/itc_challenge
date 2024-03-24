@@ -33,7 +33,7 @@
             </div>
             <div class="nav-bar">
                <nav>
-                   <span class="material-symbols-outlined" id="menu"> menu </span>
+                   
                    <ul>
                        <li><a href="#home" class="active">Home</a></li>
                        <li><a href="#who">Who are we</a></li>
@@ -292,7 +292,30 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="navigation">
 
+           <div class="logo-contact"> 
+            <img src="{% static "imgs/fffff.png" %}" >
+            <ul class="social"> 
+                <li><a href="#"><img src="{% static "imgs/fb.png" %}"></a></li>
+                <li><a href="#"><img src="{% static "imgs/insta.png" %}"></a></li>
+                <li><a href="#"><img src="{% static "imgs/telegrame.png" %}"></a></li>
+                <li><a href="#"><img src="{% static "imgs/gmail.png" %}"></a></li>
+            </ul>
+           </div>
+            <HR></HR>
+            <div class="links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#who">Who are we</a></li>
+                    <li><a href="#">Our service</a></li>
+                    <li><a href="#contact">Our contact</a></li>
+                </ul>
+               <P>THE ADDRESS © 2024-2025 Droits réservés</P>
+            </div>
+        </div>
+    </footer>
 </body>
 <script>
     window.onload = function(){
@@ -329,20 +352,50 @@ links.forEach(function(link) {
 
         // Add 'active' class to the clicked link
         link.classList.add('active');
-
-        // Toggle visibility of nested list if the clicked link is "Our service"
-        if (link.parentElement.classList.contains('arrow')) {
-            var nestedList = link.nextElementSibling;
-            nestedList.classList.toggle('show');
-        } else {
-            // Remove 'show' class from all nested lists
-            var nestedLists = document.querySelectorAll('.nav-bar ul ul');
-            nestedLists.forEach(function(list) {
-                list.classList.remove('show');
-            });
+// Toggle visibility of nested list if the clicked link is "Our service"
+if (link.parentElement.classList.contains('arrow')) {
+    var nestedList = link.parentElement.querySelector('ul');
+    nestedList.classList.toggle('show');
+} else {
+    // Remove 'show' class from all nested lists except for "Our service"
+    var nestedLists = document.querySelectorAll('.nav-bar ul ul');
+    nestedLists.forEach(function(list) {
+        if (list.parentElement.classList.contains('arrow')) {
+            return; // Skip nested list under "Our service"
         }
+        list.classList.remove('show');
     });
+}
 });
+});
+
+// Function to set active link based on scroll position
+function setActiveLink() {
+var scrollPosition = window.scrollY;
+
+links.forEach(function(link) {
+var sectionId = link.getAttribute('href').substring(1); // Remove the '#' from the href
+var section = document.getElementById(sectionId);
+
+if (section) {
+    var sectionTop = section.offsetTop;
+    var sectionHeight = section.offsetHeight;
+
+    // Check if the current scroll position is within the section
+    if (scrollPosition >= sectionTop && scrollPosition < (sectionTop + sectionHeight)) {
+        // Remove 'active' class from all links
+        links.forEach(function(link) {
+            link.classList.remove('active');
+        });
+        link.classList.add('active');
+    }
+}
+});
+}
+
+// Set active link on page load and scroll
+window.addEventListener('load', setActiveLink);
+window.addEventListener('scroll', setActiveLink);
 });
 </script>
 <script>

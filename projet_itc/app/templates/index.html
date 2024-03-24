@@ -1,0 +1,366 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Cairo:wght@200..1000&family=Noto+Sans+Khojki&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="{% static 'js/scroll.js' %}"></script>
+ 
+    <style>
+        .container .innovate-hub {
+            position: relative;
+            background-image: url("{% static 'imgs/photo_2024-03-22_14-00-35.jpg' %}");
+           
+            background-size: cover;
+            min-height: 100vh;
+        }
+
+        /* Add other styles as needed */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-bar">
+           <div class="logo">
+                <img src="{% static "imgs/1711166546413_innovate hubai black and blue.png" %}">
+            </div>
+            <div class="nav-bar">
+               <nav>
+                   <span class="material-symbols-outlined" id="menu"> menu </span>
+                   <ul>
+                       <li><a href="#home" class="active">Home</a></li>
+                       <li><a href="#who">Who are we</a></li>
+                       <li class="arrow"><a href="#">Our service
+                           <span class="material-symbols-outlined">expand_more</span>
+                       </a>
+                   <ul>
+                       <li><a href="#pag">About Us</a></li>
+                       <li><a href="#chos">Choose Us</a></li>
+                       <li><a href="#cor">Courses</a></li>
+                       <li><a href="#cont">Co-working space</a></li>
+                       <li><a href="#pac">Packs</a></li>
+                   </ul></li>
+                       <li><a href="#contact">Our contact</a></li>
+                   </ul>
+               </nav>
+            </div>
+        </div>
+   </header>
+
+    <div class="container ">
+        <div class="innovate-hub" id="home">
+            
+            <div class="overlay"></div>
+            <span class="material-symbols-outlined brain">neurology</span>
+            <span class="material-symbols-outlined head">psychology</span>
+
+            <div class="text">
+                <div>
+                    <h1>InnovateHub</h1>
+                    <p>we believe in setting hight standards and expectation.
+                        this is why our clients have today what others can only attempt to provide tomorrow.</p>
+                    <button><a href="#contact">Join Us</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="who-are-we" id="who">
+            <img src="{% static "imgs/download.png" %}">
+            <h1 class=" reveal">who are we</h1>
+            <p class="  reveal">InnovateHub is a dynamic training center with a vibrant coworking space. Their vision is
+                to establish a strong digital presence to enhance outreach and engagement. They recognize the importance
+                of several key elements</p>
+            <!-- <button>join us</button> -->
+        </div>
+
+        <!--  -->
+        <div class="page">
+            <div class="part1">
+                <h1 class="reveal">ENTREPRENEURS AND THE WORK OF TOMORROW </h1>
+                <img src="{% static "imgs/img2.jpg"%}">
+                <div class="text1">
+                    <p> Societal Challenges at the Heart of Future Entrepreneurship
+                        The entrepreneur of tomorrow is no longer just someone who pursues their project; they must now,
+                        more than ever, grapple with societal challenges and environmental concerns. Giving purpose to
+                        their activities is essential. The future entrepreneur doesn’t merely ask what product or
+                        service to create; they also focus on solving significant societal issues, such as education or
+                        mobility.
+                        Humanistic Values
+                        Without idealizing the entrepreneur of the future, they will undoubtedly be more connected and
+                        globally aware. They will need to consider how to reintegrate societal impacts at both the
+                        environmental and social levels to create new business models.
+                        These future entrepreneurs will operate in a healthier and more respectful environment. </p>
+                </div>
+            </div>
+            <div class="part2">
+                <div><img src="{% static "imgs/img3.jpg"%}"></div>
+                <div class="text2">
+                    <h3 class="reveal"><br>with us u can build your dream company with you step by step </h3>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+
+        <!-- PAGE COURSES -->
+        <h1 class="reveal">Why choose our training? <img class="IDEA" src="{% static "imgs/56c365347cb86ddd101623a14d444c69.png"%}">
+        </h1>
+
+        <div class="first">
+            <div class="rect1 reveal">
+                <h4>Adapted to all levels</h4>
+                <P>Our programs are rich and flexible, suitable for everyone. Whether you are a beginner or advanced,
+                    our courses are designed to meet your needs. We offer translations for those who want to improve
+                    their skills.</P>
+                <img src="{% static "imgs/M.png"%}">
+            </div>
+            <div class="rect2 reveal">
+                <h4>Practice-Based</h4>
+                <p> At the end of each course, you will work on a practical project.</p>
+                <div class="icon">
+                    <img src="{% static "imgs/M.png" %}">
+                </div>
+            </div>
+            <div class="rect3 reveal">
+                <h4>Passionate Instructors</h4>
+                <p> Our trainers are professionals who are passionate about their</p>
+                <div class="icon">
+                    <img src="{% static "imgs/M.png"%}">
+                </div>
+            </div>
+        </div>
+        <div class="courses">
+            <h1 class="reveal">Our courses</h1>
+            <div class="cart">
+                <div class="Marketing reveal">
+                    <h2>Marketing</h2>
+                    <img src="{% static "imgs/ma.png"%}">
+                    <div class="price">
+                        <i>7000 DZ</i><BR><br>
+                        <span>5500 DZ</span>
+                    </div>
+                </div>
+                <div class="dev web reveal">
+                    <h2>dev web </h2>
+                    <img src="{% static "imgs/web.png" %}">
+                    <div class="price">
+                        <i>12000 DZ</i><BR><br>
+                        <span>7000 DZ</span>
+                    </div>
+                </div>
+                <div class="graphic design reveal">
+                    <h2>graphic desighn</h2>
+                    <img src="{% static "imgs/design.jpg" %}">
+                    <div class="price">
+                        <i>8500 DZ</i><BR><br>
+                        <span>4900 DZ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END -->
+
+        <!--  -->
+        <div class="context">
+            <h1 class=" reveal">Coworking space that promises to revolutionize the way you work, collaborate, and create
+                value</h1>
+            <p class=" reveal">InnovateHub is also a coworking space in Algeria that promises to transform the way
+                professionals work, connect, and collaborate. It caters to independent professionals such as
+                entrepreneurs, freelancers, and bloggers, providing them with all the necessary tools and equipment for
+                a mobile office. Additionally, InnovateHube offers activities and events, fostering a sense of community
+                among its members who share common goals. In summary, THE ADDRESS is a blend of innovation, creativity,
+                work, and collaboration, all under one roof for maximum impact.</p>
+            <H2>Wanna see us !</H2>
+        </div>
+        <div class="image">
+            <img src="{% static "imgs/blue.jpg" %}">
+            <img src="{% static "imgs/class.jpg" %}">
+            <img src="{% static "imgs/P.jpg" %}">
+        </div>
+
+        <!-- what about our packs -->
+
+        <div class="packs">
+            <h1 class="h1">what about our packs</h1>
+            <P>Interested in one of the packages? Simply come to the space, pay, and settle in:</P>
+            <div class="groupe reveal">
+                <div class="mois" style=" background: #093a54;">
+                    <h2 class="h2">1 MOIS</h2>
+                </div>
+                <div class="JOURNÉE reveal" style=" background: #427D9D;    ">
+                    <h2 class="h2">1 JOURNÉE</h2>
+                </div>
+                <div class="HEURE reveal" style="background: #9BBEC8;">
+                    <h2 class="h2">1 HEURE</h2>
+                </div>
+                <div class="1 ">
+                    <div class="blue"
+                        style="width: 100%;  height: 18PX;background:  #114967; border-radius: 10px 10px 0PX 0PX;">
+                    </div>
+                    <h3>8.000 DA</h3>
+                    <HR>
+                    </HR>
+                    <P>1 person</P>
+                </div>
+                <div class="2 ">
+                    <div class="blue"
+                        style="width: 100%;  height: 18PX;background: #427D9D; border-radius: 10px 10px 0PX 0PX;"></div>
+                    <h3>15.000 DA</h3>
+                    <HR>
+                    </HR>
+                    <P>2 persons or plus</P>
+                </div>
+                <div class="3 ">
+                    <div class="blue"
+                        style="width: 100%;  height: 18PX; background: #9BBEC8;; border-radius: 10px 10px 0PX 0PX;">
+                    </div>
+                    <h3>800 DA</h3>
+                    <HR>
+                    </HR>
+                    <P>1 person</P>
+                </div>
+                <div class="3 ">
+                    <div class="blue"
+                        style="width: 100%;  height: 18PX;background:  #114967; border-radius: 10px 10px 0PX 0PX;">
+                    </div>
+                    <h3>1.400 DA</h3>
+                    <HR>
+                    </HR>
+                    <P>2 persons or plus</P>
+                </div>
+                <div class="5">
+                    <div class="blue"
+                        style="width: 100%;  height: 18PX;background: #427D9D; border-radius: 10px 10px 0PX 0PX;"></div>
+                    <h3>250 DA</h3>
+                    <HR>
+                    </HR>
+                    <P>1 person</P>
+                </div>
+                <div class="6 ">
+                    <div class="blue"
+                        style="width: 100%;  height: 18PX; background: #9BBEC8;; border-radius: 10px 10px 0PX 0PX;">
+                    </div>
+                    <h3>350 DA</h3>
+                    <HR>
+                    </HR>
+                    <P>2 persons or plus</P>
+                </div>
+            </div>
+        </div>
+        <!-- ************************************************ -->
+
+        <div class="are-you-ready" id="contact">
+            <h2 class="  reveal">Are you ready to apply?</h2>
+            <div class="contact">
+                <div class="elipse">
+                    <p>Get free consultation</p>
+                    <img src="{% static "imgs/New Project (1).png" %}">
+                </div>
+
+                <form id="myForm" method="post" action="{% url 'register'%}">
+                    {% csrf_token %}
+                    <div class="down">
+                        <h2>Join Us Now</h2>
+                        <p>To get our best promo first</p>
+                        <input id="name" type="text" placeholder="Name" name="name">
+                        <input id="family" type="text" placeholder="Family Name" name="family">
+                        <input id="email" type="email" placeholder="Your E mail" name="email">
+                        <select id="persons" name="nbr_personne">
+                            <option value="1">1 person</option>
+                            <option value="1">2 persons</option>
+                            <option value="1">10 persons</option>
+                            <option value="1">50 persons</option>
+                            <option value="1">less than 200 person</option>
+                        </select>
+                        <input type="date" id="date" name="date">
+                        <select id="persons" name="hmy">
+                            <option value="1">hours</option>
+                            <option value="1">Month</option>
+                            <option value="1">year</option>
+                        </select>
+                        <input type="time" id="time" name="time" name="time">
+                        <input type="number" id="hours" name="hours" min="0" placeholder="how long" name="hours">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    window.onload = function(){
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+            for(var i=0; i< reveals.length; i++){
+                var windowHeight = window.innerHeight;
+                var revealTop = reveals[i].getBoundingClientRect().top;
+                var revealPoint = 150;
+
+                if(revealTop < windowHeight - revealPoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    }
+    
+    document.addEventListener("DOMContentLoaded", function() {
+// Get all anchor links inside the navigation
+var links = document.querySelectorAll('.nav-bar ul li a');
+
+// Add click event listener to each link
+links.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+        // Remove 'active' class from all links
+        links.forEach(function(item) {
+            item.classList.remove('active');
+        });
+
+        // Add 'active' class to the clicked link
+        link.classList.add('active');
+
+        // Toggle visibility of nested list if the clicked link is "Our service"
+        if (link.parentElement.classList.contains('arrow')) {
+            var nestedList = link.nextElementSibling;
+            nestedList.classList.toggle('show');
+        } else {
+            // Remove 'show' class from all nested lists
+            var nestedLists = document.querySelectorAll('.nav-bar ul ul');
+            nestedLists.forEach(function(list) {
+                list.classList.remove('show');
+            });
+        }
+    });
+});
+});
+</script>
+<script>
+    document.getElementById('myForm').addEventListener('keypress', function(event) {
+        if (event.keyCode === 13) { // 13 is the keycode for the Enter key
+            event.preventDefault(); // Prevent the default action to stop submitting the form multiple times
+            // Optional: Check if the form is valid before submitting
+            if (this.checkValidity()) {
+                this.submit();
+            }
+        }
+    });
+    </script>
+
+</html>

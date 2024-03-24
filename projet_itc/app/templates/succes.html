@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/css.css' %}">
+    
+    <title>InnovateHub</title>
+</head>
+<body>
+    <div class="delete-popup">
+        <h2>InnovateHub</h2>
+        <p>YOUR FORM HASE BEEN SUCCESFULLY SAVED</p>
+          <p>you are gonna receive a confirmation  emeil</p> 
+        <a href="{% url 'home' %}" class="cancel-link">cancel</a>
+    </div>
+</body>
+</html>
